@@ -1,0 +1,14 @@
+{
+  "name": "lightponents",
+  "_cacheHeaders": {
+    "ETag": "\"3bad2c41909db35e7fd0f7ef83297d47e3a3fc33\"",
+    "Content-Length": "1402",
+    "Content-Type": "text/plain; charset=utf-8"
+  },
+  "_release": "e-tag:3bad2c419",
+  "main": "index.js",
+  "_source": "https://raw.githubusercontent.com/Qs-F/lightponents/master/lightponents.js",
+  "_target": "*",
+  "_originalSource": "https://raw.githubusercontent.com/Qs-F/lightponents/master/lightponents.js",
+  "_direct": true
+}
