@@ -32,3 +32,15 @@ header>div.photo_profile>div.profile>p.whoami {
   letter-spacing: .32em;
   padding: 0 4px;
 }
+
+footer>div.profiles {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+footer>div.profiles>a>img.profile {
+  border: var(--whitish) 2px solid;
+  width: 48px;
+}
