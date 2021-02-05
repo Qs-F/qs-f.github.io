@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 800 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-960,0)">
+        <g id="アートボード2" transform="matrix(0.908342,0,0,0.843848,-184.008,0)">
+            <rect x="1259.45" y="0" width="880.725" height="948.039" style="fill:white;"/>
+            <g transform="matrix(0.557665,0,0,0.396228,852.355,240.057)">
+                <g transform="matrix(0.921108,0,0,1.39548,65.421,-92.7674)">
+                    <path d="M1211.74,832L1364.03,832L1421.74,500.571L1735.46,500.571L1753.96,394.286L1797.14,394.286L1770.29,548.571L1456.57,548.571L1398.86,880L1203.43,880L1211.74,832ZM1861.71,202.857L1516.57,202.857L1491.74,346.286L1448.6,346.286L1481.74,154.857L1826.89,154.857L1845.42,48L1888.57,48L1861.71,202.857Z" style="fill:url(#_Linear1);"/>
+                </g>
+                <g transform="matrix(0.870866,0,0,1.31937,122.046,43.5845)">
+                    <clipPath id="_clip2">
+                        <ellipse cx="1846.09" cy="744.37" rx="87.148" ry="83.053"/>
+                    </clipPath>
+                    <g clip-path="url(#_clip2)">
+                        <g transform="matrix(2.26687,-0,-0,2.26687,698.094,-492.237)">
+                            <use xlink:href="#_Image3" x="468.654" y="513.907" width="76.889px" height="73.276px" transform="matrix(0.998557,0,0,0.99021,0,0)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(201.388,-248.498,248.498,201.388,1514.7,581.558)"><stop offset="0" style="stop-color:rgb(0,177,244);stop-opacity:1"/><stop offset="0.5" style="stop-color:rgb(0,177,187);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(0,177,168);stop-opacity:1"/></linearGradient>
+        <image id="_Image3" width="77px" height="74px" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABKAE0DAREAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECAwT/xAAXEAEBAQEAAAAAAAAAAAAAAAAAAQIR/8QAGwEBAAIDAQEAAAAAAAAAAAAAAAIEAQMGBQj/xAAaEQEBAQEBAQEAAAAAAAAAAAAAAQIDETEh/9oADAMBAAIRAxEAPwCljvd83zfKpYqawkixpsZQgDAAAAAA6NR0nXk1SqWKHTmlKrYq7wkrY0XLKEPAYAAAAHbqO26c5VeVnqPO68k5Wdij05pSq2Ke8JK2NFyyhCwGAAAB3O9VkajT05zTMrPWXn9eSUrOxQ6c05VbFPeElbGjWWUNdgMAADud6rAIsat85olZ6jz+vJOVnYodOacqtinvCStivrLKGuwGAB3O9VgAEWda94miVTWVDrxTlZ6jz+nNKVSxT3hJWxX1lJDVYDA7neqwAABZ1DWJoZ6yodeKcrPUef05JSqWKe8JIsVtZSVa7B3O7VgAAACzqOszQz1lQ68UpWeo8/pyTlVsUt4SVV7ln12O2VwAAAACzqOsyimsqXXilKz1HndOacqlinrn+peup1jQAAAAAAjSG/hGenndU4pVDf1KP//Z"/>
+    </defs>
+</svg>
