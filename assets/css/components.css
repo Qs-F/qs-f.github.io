@@ -84,3 +84,8 @@ pre>code {
   border-radius: 0;
   padding: 0;
 }
+
+footer {
+  display: block;
+  padding: 72px 0;
+}
