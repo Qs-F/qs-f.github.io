@@ -10,7 +10,10 @@ header img.profile {
 header>div.photo_profile {
   align-items: center;
   display: flex;
-  gap: 16px;
+}
+
+header>div.photo_profile>*:not(:last-child) {
+  margin-right: 16px;
 }
 
 header>div.photo_profile>div.profile {
@@ -36,8 +39,11 @@ header>div.photo_profile>div.profile>p.whoami {
 footer>div.profiles {
   align-items: center;
   display: flex;
-  gap: 16px;
   margin-top: 24px;
+}
+
+footer>div.profiles>*:not(:last-child) {
+  margin-right: 16px;
 }
 
 footer>div.profiles>a>img.profile {
