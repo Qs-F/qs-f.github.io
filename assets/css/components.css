@@ -1,0 +1,91 @@
+header {
+  display: block;
+  padding: 72px 0;
+}
+
+div.card {
+  background-color: var(--bg);
+  border-radius: 24px;
+  padding: 32px;
+}
+
+div.card>*:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+div.x-spacer {
+  width: 100%;
+  margin-right: 24px;
+}
+
+div.y-spacer {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+img.profile {
+  border-radius: 50%;
+}
+
+button {
+  --bg: var(--theme);
+  --color: var(--blackish-basis);
+  background-color: var(--bg);
+  border: none;
+  border-radius: 23px;
+  box-shadow: rgba(var(--theme-rgb), .5) 0 0 0;
+  color: var(--color);
+  cursor: pointer;
+  letter-spacing: .12em;
+  line-height: 0;
+  font-family: var(--fonts);
+  font-size: var(--font-size-text);
+  font-weight: 700;
+  padding: 24px;
+  text-transform: uppercase;
+  transition: .12s;
+  user-select: none;
+}
+
+button:focus,
+button:hover {
+  box-shadow: rgba(var(--theme-rgb), .5) 0 0 0 4px;
+  outline: none;
+}
+
+button:active {
+  --bg: rgba(var(--theme-rgb), .8);
+  box-shadow: rgba(var(--theme-rgb), .5) 0 0 0;
+}
+
+code {
+  background-color: var(--blackish-basis);
+  border: var(--whitish) 1px solid;
+  border-radius: 8px;
+  color: var(--whitish);
+  font-family: var(--fonts-mono);
+  padding: 0px 8px;
+}
+
+pre {
+  background-color: var(--blackish-basis);
+  border-radius: 8px;
+  color: var(--whitish);
+  font-family: var(--fonts-mono);
+  overflow: scroll;
+  padding: 8px 8px;
+  word-break: keep-all;
+  width: 100%;
+}
+
+
+pre>code {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+footer {
+  display: block;
+  padding: 72px 0;
+}
