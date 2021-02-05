@@ -1,26 +1,6 @@
-html,
-body {
-  background: var(--basis);
-  color: var(--color);
-  font-family: var(--fonts);
-  font-size: var(--font-size-text);
-  font-weight: 500;
-  letter-spacing: .12em;
-  line-height: 1.4;
-}
-
-body {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 0 var(--page-margin);
-}
-
-body>* {
+header {
   display: block;
-  max-width: var(--content-width);
-  margin-bottom: 24px;
-  width: 100%;
+  padding: 72px 0;
 }
 
 div.card {
@@ -43,9 +23,8 @@ div.y-spacer {
   margin-bottom: 24px;
 }
 
-h2 {
-  font-size: var(--font-size-title);
-  font-weight: 900;
+img.profile {
+  border-radius: 50%;
 }
 
 button {
@@ -57,10 +36,11 @@ button {
   box-shadow: rgba(var(--theme-rgb), .5) 0 0 0;
   color: var(--color);
   cursor: pointer;
-  letter-spacing: .16em;
+  letter-spacing: .12em;
   line-height: 0;
+  font-family: var(--fonts);
   font-size: var(--font-size-text);
-  font-weight: 900;
+  font-weight: 700;
   padding: 24px;
   text-transform: uppercase;
   transition: .12s;
@@ -76,4 +56,31 @@ button:hover {
 button:active {
   --bg: rgba(var(--theme-rgb), .8);
   box-shadow: rgba(var(--theme-rgb), .5) 0 0 0;
+}
+
+code {
+  background-color: var(--blackish-basis);
+  border: var(--whitish) 1px solid;
+  border-radius: 8px;
+  color: var(--whitish);
+  font-family: var(--fonts-mono);
+  padding: 0px 8px;
+}
+
+pre {
+  background-color: var(--blackish-basis);
+  border-radius: 8px;
+  color: var(--whitish);
+  font-family: var(--fonts-mono);
+  overflow: scroll;
+  padding: 8px 8px;
+  word-break: keep-all;
+  width: 100%;
+}
+
+
+pre>code {
+  border: none;
+  border-radius: 0;
+  padding: 0;
 }
