@@ -72,3 +72,7 @@ ul li::before {
 h3+ul {
   margin-top: -16px;
 }
+
+small {
+  font-size: var(--font-size-text);
+}
