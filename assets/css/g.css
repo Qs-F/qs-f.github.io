@@ -22,6 +22,10 @@ body>* {
   width: 100%;
 }
 
+main>* {
+  margin-bottom: 24px;
+}
+
 h1,
 h2,
 h3,
