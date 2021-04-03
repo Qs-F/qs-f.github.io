@@ -1,0 +1,88 @@
+<dr-publications>
+  <section class="card" if={!this.state.error && !this.state.list.length}>
+    <h2>⏳</h2>
+    <p>読込中...</p>
+  </section>
+
+  <ul if={this.state.list.length}>
+    <li each={pub in this.state.list}>
+      <section class="card">
+        <span class="date">{pub.date.toISOString().split('T')[0]}</span>
+        <h2 class="title">{pub.title}</h2>
+        <p class="url"><a href={pub.url}>{pub.url}</a></p>
+        <div class="note" if={pub.note}>
+          <dr-raw html={pub.note}></dr-raw>
+        </div>
+      </section>
+    </li>
+  </ul>
+
+  <section class="card" if={this.state.error && !this.state.list.length}>
+    <h2>エラーが発生しました 🐬</h2>
+    <p>ページ読込中にエラーが発生しました。再読込してもエラーとなる場合、恐れ入りますが管理者までご連絡をお願いします。</p>
+  </section>
+
+  <style>
+    section {
+      width: 100%;
+    }
+
+    li {
+      margin-bottom: 32px;
+    }
+
+    li::before {
+      content: "";
+    }
+
+    span.date:not(:last-child) {
+      display: block;
+      font-size: var(--font-size-text);
+      margin-bottom: 8px;
+    }
+
+    h2.title:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    p.url:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    div.note {
+      color: var(--pale);
+      opacity: .8;
+    }
+  </style>
+
+  <script>
+    const LISTAPI = 'https://de-liker.microcms.io/api/v1/publications?limit=1000&orders=-date'
+    const APIKEY = 'e6728059-2ba9-4111-9be9-1425c5cff0c3'
+
+    const init = async () => {
+      const resp = await fetch(LISTAPI, {
+        method: 'GET',
+        headers: {
+          'X-API-KEY': APIKEY,
+        }
+      })
+      return (await resp.json()).contents.map(v => ({...v, date: new Date(v.date) }))
+    }
+
+    export default {
+      async onBeforeMount() {
+        this.state = {}
+        this.state.list = []
+        this.state.error = undefined
+      },
+      async onMounted() {
+        try {
+          this.state.list = await init()
+        } catch (e) {
+          this.state.error = e
+        }
+        this.update()
+      }
+    }
+  </script>
+</dr-publications>

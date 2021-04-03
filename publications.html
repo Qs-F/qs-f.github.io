@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <meta name="og:image" content="https://qs-f.github.io/assets/img/ogp.jpg">
+    <meta name="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image"/>
+    <link rel="icon" href="/assets/img/favicon.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.2.0/dist/css/yakuhanjp.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,500,900&display=swap&subset=japanese">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://v2.css.dr-0x.com/g.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/g.css">
+    <link rel="stylesheet" href="/assets/css/page.css">
+
+    <meta name="og:url" content="https://qsf.de-liker.com/publications.html">
+    <meta name="og:title" content="Publications - たふみ (@CreatorQsF)">
+    <title>Publications - たふみ (@CreatorQsF)</title>
+  </head>
+  <body>
+    <header>
+      <div class="photo_profile">
+        <a href="/">
+          <img alt="DE LIKER ロゴ画像" src="/assets/img/de-liker.svg" class="profile">
+        </a>
+        <div class="profile">
+          <h1>Publications </h1>
+          <p class="whoami">たふみの書いた記事など</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <dr-publications></dr-publications>
+    </main>
+
+    <footer>
+      <p>
+        <small>Copyright 2021 たふみ(CreatorQsF) / DE LIKER</small>
+      </p>
+      <ul>
+        <li>
+          <p>
+            <a href="/privacy.html">プライバシーポリシー</a>
+          </p>
+        </li>
+      </ul>
+      <div class="profiles">
+        <a target="_blank" rel="noopener" href="https://de-liker.com/about.html">
+          <img alt="たふみのウェブサイト" src="/assets/img/qsf.svg" class="profile">
+        </a>
+        <a target="_blank" rel="noopener" href="https://de-liker.com">
+          <img alt="DE LIKER ウェブサイト" src="/assets/img/de-liker.svg" class="profile">
+        </a>
+      </div>
+    </footer>
+
+    <script src="/assets/components/publications.riot" type="riot"></script>
+    <script src="/assets/components/raw.riot" type="riot"></script>
+    <script src="https://unpkg.com/riot@5/riot+compiler.min.js"></script>
+    <script>
+      (async function main() {
+        await riot.compile()
+
+        riot.mount('dr-publications')
+      }())
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<dr-publications>
+  <ul>
+    <li each={pub in this.state.list}>
+      <p><a href={pub.url}>{pub.title}</a></p>
+    </li>
+  </ul>
+
+  <script>
+    const LISTAPI = () => 'https://de-liker.microcms.io/api/v1/publications?limit=1000&orders=-date'
+    const EACHAPI = (id) => `https://de-liker.microcms.io/api/v1/publication/${id}`
+    const APIKEY = 'e6728059-2ba9-4111-9be9-1425c5cff0c3'
+
+    const initList = async () => {
+      const resp = await fetch(LISTAPI(), {
+        method: 'GET',
+        headers: {
+          'X-API-KEY': APIKEY,
+        }
+      })
+      try {
+        return (await resp.json()).contents
+      } catch(e) {
+        console.error(`API Error: ${e}`)
+      }
+      return []
+    }
+
+    const initEach = async (id) => {
+      const resp = await fetch(EACHAPI(id), {
+        method: 'GET',
+        headers: {
+          'X-API-KEY': APIKEY,
+        }
+      })
+      try {
+        return await resp.json()
+      } catch(e) {
+        console.error(`API Error: ${e}`)
+      }
+      return {}
+    }
+
+    export default {
+      async onBeforeMount() {
+        this.state = {}
+        this.state.list = []
+        this.state.each = {}
+
+        const id = (new URLSearchParams(window.location.search)).get("id")
+      },
+      async onMounted() {
+        this.state.list = await init()
+        this.update()
+      }
+    }
+  </script>
+</dr-publications>
