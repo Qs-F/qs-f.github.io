@@ -1,0 +1,18 @@
+<dr-raw>
+  <script>
+    export default {
+      onBeforeMount(_, props) {
+        this.props = props
+      },
+      setInnerHTML() {
+        this.root.innerHTML = this.props.html
+      },
+      onMounted() {
+        this.setInnerHTML()
+      },
+      onUpdated() {
+        this.setInnerHTML()
+      }
+    }
+  </script>
+</dr-raw>
